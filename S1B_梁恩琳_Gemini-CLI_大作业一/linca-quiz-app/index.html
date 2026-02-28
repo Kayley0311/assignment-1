@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智測 Linca - 您的專屬智能學習夥伴</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>智測 Linca</h1>
+        <p>Linca — 您的專屬智能學習夥伴，30 秒開啟高效練習！</p>
+        <button id="progress-btn">學習進度</button>
+    </header>
+
+    <main>
+        <div id="filter-container">
+            <input type="text" id="search-input" placeholder="搜尋題目...">
+            <select id="subject-filter">
+                <option value="all">所有科目</option>
+            </select>
+            <button id="start-quiz-btn">開始測驗</button>
+        </div>
+        <div id="quiz-container" style="display: none;">
+            <div id="timer"></div>
+            <div id="question"></div>
+            <div id="answer-buttons" class="btn-grid"></div>
+            <div id="explanation-container" style="display: none;">
+                <h4>解析：</h4>
+                <p id="explanation-text"></p>
+            </div>
+            <button id="next-btn" style="display: none;">下一題</button>
+        </div>
+        <div id="progress-container" style="display: none;">
+            <h2>學習進度</h2>
+            <div id="progress-stats"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 智測 Linca</p>
+    </footer>
+
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
